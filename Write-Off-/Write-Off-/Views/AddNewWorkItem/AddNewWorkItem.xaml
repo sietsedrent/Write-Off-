@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Write_Off_.Views.AddNewWorkItem.AddNewWorkItem"
+             Title="AddNewWorkItem">
+    <VerticalStackLayout>
+        <Grid BackgroundColor="AliceBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Label
+               Text="Title" 
+               Grid.Row="0"
+               Grid.Column="0"
+            ></Label>
+            <Entry
+                Text="{Binding EntryName}"
+                Grid.Row="0"
+                IsEnabled="true"
+                Grid.Column="1"
+            ></Entry>
+
+            <Label
+                Text="Points"
+                Grid.Row="1"
+                Grid.Column="0">
+            </Label>
+            <Entry
+                Text="{Binding EntryPoints}"
+                Grid.Row="1"
+                IsEnabled="true"
+                Grid.Column="1">
+            </Entry>
+
+            <Label
+                Text="Finished"
+                Grid.Row="2"
+                Grid.Column="0">
+            </Label>
+            <CheckBox
+                IsChecked="{Binding EntryFinished}"
+                Grid.Row="2"
+                Grid.Column="1"
+            ></CheckBox>
+            
+
+        </Grid>
+        <Button
+            Text="Go Back"
+            x:Name="GoBackBtn"
+            Clicked="GoBack"
+        ></Button>
+
+        <Button
+            Text="Create New Task"
+            x:Name="CreateTaskBtn"
+            Command="{Binding CreateNewTask}"
+        ></Button>
+    </VerticalStackLayout>
+</ContentPage>

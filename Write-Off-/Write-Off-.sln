@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.14.37027.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Write-Off-", "Write-Off-\Write-Off-.csproj", "{A0590169-D5E8-42EE-AAF9-50371BBD9110}"
+	ProjectSection(ProjectDependencies) = postProject
+		{678F37FF-EC3F-4B25-B37F-595631D16986} = {678F37FF-EC3F-4B25-B37F-595631D16986}
+		{C853EDCA-51D0-4D66-AF1B-2079AA81067D} = {C853EDCA-51D0-4D66-AF1B-2079AA81067D}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Write-Off-Business", "Write-Off-Business\Write-Off-Business.csproj", "{678F37FF-EC3F-4B25-B37F-595631D16986}"
 EndProject

@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Write_Off_Business.Models
 {
-    internal class WorkList
+    public class WorkList
     {
-        public ICollection<WorkItem> workList;
+        public ICollection<WorkItem> _workList;
         public WorkList(ICollection<WorkItem> workList)
         {
-            this.workList = workList;
+            this._workList = workList;
         }
     }
 }

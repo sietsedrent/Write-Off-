@@ -18,22 +18,46 @@
                     SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
         <Grid BackgroundColor="Azure">
             <Grid.RowDefinitions>
-                <!--Aantal row definitions is aantal rijen -> koppelen aan icollection? -->
+                <!--Aantal row definitions is aantal rijen -> koppelen aan icollection?
+                + ook nog maand per maand page maken eig
+                -->
                 <RowDefinition Height="Auto"></RowDefinition>
                 <RowDefinition Height="Auto"></RowDefinition>
                 <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+
 
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+
 
             </Grid.ColumnDefinitions>
             <Label
                 Text="Name"
                 Grid.Row="0"
                 Grid.Column="0">
+            </Label>
+            <Label
+                Text="Age"
+                Grid.Row="0"
+                Grid.Column="1">
+            </Label>
+            
+            <Label
+                Text="Woonplaats"
+                Grid.Row="0"
+                Grid.Column="2"
+                ></Label>
+            <Label
+                Text="Voltooid?"
+                Grid.Row="0"
+                Grid.Column="3"
+                >
+                
             </Label>
             <Label
                 Text="Sietse"
@@ -45,13 +69,51 @@
                 Grid.Row="2"
                 Grid.Column="0">
             </Label>
+            <Label
+                Text="25"
+                Grid.Row="1"
+                Grid.Column="1"
+                >
+            </Label>
+            <Label
+                Text="24"
+                Grid.Row="2"
+                Grid.Column="1"
+                >
+            </Label>
+            <Label
+                Text="'t Harde"
+                Grid.Row="1"
+                Grid.Column="2"
+                >
+            </Label>
+            <Label
+                
+                Text="Nunspeet"
+                Grid.Row="2"
+                Grid.Column="2"
+                ></Label>
+            <Button
+                x:Name="FinishedBtn"
+                Clicked="Finished"
+                Text="✓"
+                Grid.Row="1"
+                Grid.Column="3">
+            </Button>
+            <Button
+                x:Name="FinishedBtn2"
+                Clicked="Finished"
+                Text="✓"
+                Grid.Row="2"
+                Grid.Column="3">
+            </Button>
             
+
         </Grid>
                 <Button
-                    x:Name="CounterBtn"
+                    x:Name="CreateItem"
                     Text="Voeg een nieuwe taak toe" 
-                    SemanticProperties.Hint="Counts the number of times you click"
-                    Clicked="OnCounterClicked"
+                    Clicked="CreateWorkItem"
                     HorizontalOptions="Fill" />
             </VerticalStackLayout>
 </ContentPage>

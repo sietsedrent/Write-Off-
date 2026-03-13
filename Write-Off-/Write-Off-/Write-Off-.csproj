@@ -64,4 +64,15 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.9" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\Write-Off-Business\Write-Off-Business.csproj" />
+	  <ProjectReference Include="..\Write-Off-Data\Write-Off-Data.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\AddNewWorkItem\AddNewWorkItem.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>
