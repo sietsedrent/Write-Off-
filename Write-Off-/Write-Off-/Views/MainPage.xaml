@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Write_Off_.MainPage">
+
+
+    x:Class="Write_Off_.MainPage">
             <VerticalStackLayout
                 Padding="30,0"
                 Spacing="25">
@@ -34,8 +36,8 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
 
-
             </Grid.ColumnDefinitions>
+            
             <Label
                 Text="Name"
                 Grid.Row="0"

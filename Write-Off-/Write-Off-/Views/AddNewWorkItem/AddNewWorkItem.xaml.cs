@@ -11,6 +11,8 @@ public partial class AddNewWorkItem : ContentPage
 	{
 		InitializeComponent();
         BindingContext = new AddNewWorkItemViewModel();
+        ViewModel = new AddNewWorkItemViewModel();
+
     }
 
     public async void GoBack(object? sender, EventArgs e)
@@ -21,7 +23,6 @@ public partial class AddNewWorkItem : ContentPage
 
 	public async void CreateNewTask(object? sender, EventArgs e)
 	{
-		
 		ViewModel.CreateTask();
 		await Navigation.PopAsync();
 	}

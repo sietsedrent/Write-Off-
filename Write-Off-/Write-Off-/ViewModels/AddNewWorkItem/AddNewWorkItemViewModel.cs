@@ -15,19 +15,29 @@ public class AddNewWorkItemViewModel : ViewModel
 	public double NewPoints
 	{
 		get { return _newPoints; }
-		set { SetField(ref _newPoints, value); }
+		set {
+			_newPoints = value;
+			OnPropertyChanged(nameof(_newPoints)); }
 	}
 
 	public string NewName
 	{
 		get { return _newName; }
-		set { SetField(ref _newName, value); }
+		set
+		{
+			_newName = value;
+			OnPropertyChanged(nameof(_newName));
+		}
 	}
 
 	public bool NewFinished
 	{
 		get { return _newFinished; }
-		set { SetField(ref _newFinished, value); }
+		set
+		{
+			_newFinished = value;
+			OnPropertyChanged(nameof(_newFinished));
+		}
 	}
 
 	public AddNewWorkItemViewModel() {
@@ -37,10 +47,12 @@ public class AddNewWorkItemViewModel : ViewModel
 
     public void CreateTask()
     {
+		Console.WriteLine("test?");
         //Ophalen info om mee te geven
-
         //Het aanmaken object met de ingevulde informatie -> ook nog textfields en labels plaatsen
         WorkItem _work = new WorkItem(Guid.NewGuid(), NewName, NewPoints, NewFinished);
+		Console.WriteLine($"{Guid.NewGuid()} {NewName} {NewPoints} {NewFinished}");
+
         //Object meegeven aan WorkList zodat deze aan array van info in xaml getoond kan worden
 
     }

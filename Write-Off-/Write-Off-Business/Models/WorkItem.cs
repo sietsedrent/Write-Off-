@@ -14,9 +14,7 @@ namespace Write_Off_Business.Models
             this.id = id;
             this.name = name;
             this.points = points;
-            this.finished = finished;
-            workList._workList.Add(this);
-            
+            this.finished = finished;            
         }
         public Guid id;
         public string name;

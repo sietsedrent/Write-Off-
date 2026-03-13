@@ -21,7 +21,7 @@
                Grid.Column="0"
             ></Label>
             <Entry
-                Text="{Binding EntryName}"
+                Text="{Binding NewName}"
                 Grid.Row="0"
                 IsEnabled="true"
                 Grid.Column="1"
@@ -33,7 +33,7 @@
                 Grid.Column="0">
             </Label>
             <Entry
-                Text="{Binding EntryPoints}"
+                Text="{Binding NewPoints}"
                 Grid.Row="1"
                 IsEnabled="true"
                 Grid.Column="1">
@@ -45,7 +45,7 @@
                 Grid.Column="0">
             </Label>
             <CheckBox
-                IsChecked="{Binding EntryFinished}"
+                IsChecked="{Binding NewFinished}"
                 Grid.Row="2"
                 Grid.Column="1"
             ></CheckBox>
@@ -61,7 +61,7 @@
         <Button
             Text="Create New Task"
             x:Name="CreateTaskBtn"
-            Command="{Binding CreateNewTask}"
+            Clicked="CreateNewTask"
         ></Button>
     </VerticalStackLayout>
 </ContentPage>
