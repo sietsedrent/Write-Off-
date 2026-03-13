@@ -18,6 +18,11 @@
                     Style="{StaticResource SubHeadline}"
                     SemanticProperties.HeadingLevel="Level2"
                     SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+                <Button
+                    Text="Monthly Overview"
+                    x:Name="MonthlyOverView"
+                    Clicked="MonthlyView">
+                </Button>
         <Grid BackgroundColor="Azure">
             <Grid.RowDefinitions>
                 <!--Aantal row definitions is aantal rijen -> koppelen aan icollection?
@@ -118,4 +123,5 @@
                     Clicked="CreateWorkItem"
                     HorizontalOptions="Fill" />
             </VerticalStackLayout>
+            
 </ContentPage>

@@ -74,6 +74,9 @@
 	  <MauiXaml Update="Views\AddNewWorkItem\AddNewWorkItem.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\MonthlyOverview\MonthlyOverview.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

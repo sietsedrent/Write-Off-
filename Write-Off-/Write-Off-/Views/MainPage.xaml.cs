@@ -1,4 +1,6 @@
-﻿using Write_Off_.Views.AddNewWorkItem;
+﻿using System.Threading.Tasks;
+using Write_Off_.Views.AddNewWorkItem;
+using Write_Off_.Views.MonthlyOverview;
 using Write_Off_Business.Models;
 
 
@@ -19,6 +21,11 @@ namespace Write_Off_
             //int id ophalen -> WorkList.WorkItem.Id ?
             //Filteren op of al aangeklikt is
             FinishedBtn.Background = new SolidColorBrush(Colors.Green);
+        }
+
+        public async void MonthlyView(object? sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MonthlyOverview());
         }
 
         //Aanmaken workitem
